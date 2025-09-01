@@ -6,8 +6,9 @@
 }
 
 a{
-    color: whitesmoke;
+    color: antiquewhite;
     text-decoration: none;
+    
 }
 
 .navbar {
@@ -18,15 +19,13 @@ a{
     padding: 25px 9%;
     display: flex;
     justify-content: space-between;
-    animation: linear forwards;
     align-items: center;
     z-index: 100;
     visibility: hidden;
     opacity: 0;
+    animation: show-content 1.5s linear forwards;
     animation-delay: 1.2s;
-    background-color: rgb(77, 195, 224);
-    color:black;
-   }
+}
 
 @keyframes show-content {
     100%{
@@ -36,6 +35,8 @@ a{
 }
 .logo{
     font-size: 30px;
+    background-color: #63eef3;
+    color: #080808;
 }
 
 .navbar .logov{
@@ -60,7 +61,7 @@ a{
 
 .navbar ul li:hover a,
 .navbar ul li.active a {
-    color: black;
+    color: rgb(173, 247, 116);
 }
 
 .home {
@@ -74,12 +75,11 @@ a{
     opacity: 0;
     animation: show-content 1.5s linear forwards;
     animation-delay: 1.6s;
-    background-image:url(portfilo11.jpeg) ;
+     background-image:url("index11.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     top:70px;
-
 
 }
 
@@ -97,7 +97,7 @@ a{
     position: relative;
     display: inline-block;
     color: transparent;
-    -webkit-text-stroke:.7px black;
+    -webkit-text-stroke:.7px #e8f0e3;
     animation: display-text 16s linear infinite;
     animation-delay: calc(-4s * var(--i));
 }
@@ -107,8 +107,8 @@ a{
     content: attr(data-text);
     position: absolute;
     width: 0;
-    border-right:2px solid black;
-    color:black;
+    border-right:2px solid #080808;
+    color: #0f050e;
     white-space: nowrap;
     overflow: hidden;
     animation: fill-text 4s linear infinite;
@@ -147,12 +147,12 @@ a{
 .btn {
     display: inline-block;
     padding: 10px 30px;
-    background-color: black;
-    border: 2px solid black;
+    background-color: #6af8f8;
+    border: 2px solid #060a0c;
     border-radius: 40px;
-    box-shadow: 0 0 10 green;
+    box-shadow: 0 0 10 #7cf03d;
     font-size: 16px;
-    color: white;
+    color: black;
     font-weight: 600;
     transition: 5s;
 
@@ -160,7 +160,7 @@ a{
 
 .btn:hover {
     background-color: transparent;
-    color: black;
+    color: #f573d4;
     box-shadow: none;
 }
 
@@ -171,18 +171,18 @@ a{
 .home-info .btn-sci .sci a {
     display: inline-flex;
     padding: 8px;
-    border: 2px solid black;
+    border: 2px solid #76d9eb;
     border-radius: 50px;
     font-size: 20px;
-    color:white;
+    color: #131012;
     margin: 0 8px;
     transition: 5s;
 }
 
 .home-info .btn-sci .sci a:hover {
-    background-color: green;
-    color: white;
-    box-shadow: 0 0 10px white;
+    background-color: #63eef3;
+    color: black;
+    box-shadow: 0 0 10px #020202;
 }
 
 .home-img .img-box {
@@ -203,7 +203,7 @@ a{
     position: absolute;
     width: 500px;
     height: 500px;
-    
+    background: conic-gradiat(transparent,transparent,transparent, );
 }
 
 .home-img .img-box .img-item {

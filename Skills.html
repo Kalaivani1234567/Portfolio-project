@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Skills</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      padding: 40px;
+    }
+
+    .skills-section {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .skills-section h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .skill {
+      margin: 15px 0;
+    }
+
+    .skill-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .skill-bar {
+      background: #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .skill-level {
+      height: 12px;
+      background: linear-gradient(90deg, #4facfe, #00f2fe);
+      width: 0;
+      border-radius: 8px;
+      transition: width 1.5s ease-in-out;
+    }
+
+    /* Animation when page loads */
+    .skill:nth-child(1) .skill-level { width: 90%; }  /* HTML */
+    .skill:nth-child(2) .skill-level { width: 85%; }  /* CSS */
+    .skill:nth-child(3) .skill-level { width: 70%; }  /* JavaScript */
+    .skill:nth-child(4) .skill-level { width: 60%; }  /* Python */
+  </style>
+</head>
+<body>
+  <div class="skills-section">
+    <h2>My Skills</h2>
+
+    <div class="skill">
+      <div class="skill-name">HTML</div>
+      <div class="skill-bar"><div class="skill-level"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">CSS</div>
+      <div class="skill-bar"><div class="skill-level"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">JavaScript</div>
+      <div class="skill-bar"><div class="skill-level"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">Python</div>
+      <div class="skill-bar"><div class="skill-level"></div></div>
+    </div>
+  </div>
+</body>
+</html>
